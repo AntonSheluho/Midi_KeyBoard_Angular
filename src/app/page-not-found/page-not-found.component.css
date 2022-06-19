@@ -1,0 +1,13 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(63,146,251);
+    background: radial-gradient(circle, rgba(63,146,251,0.9332107843137255) 0%, rgba(70,252,177,1) 100%);
+}
+
+.error {
+    color: red;
+}
