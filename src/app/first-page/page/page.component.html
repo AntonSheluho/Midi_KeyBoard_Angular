@@ -1,1 +1,19 @@
-<p>page works!</p>
+<div class="root1">
+    <div class="clock">{{ clock | date:'hh:mm:ss' }}</div>
+    <div class="picture">
+        <div class="message">'You have been successfully registered'</div>
+        <div class="pictureContent pictureFirstContent1">Would you like to learn how to play the piano?</div>
+        <div class="pictureContent pictureFirstContent2">You can achieve your dreams with us!</div>
+        <div class="pictureContent pictureFirstContent3">
+            <div class="buttonWrapper">
+                <!-- <a routerLink="/entrance" class="button buttonEnter" routerLinkActive="active" ariaCurrentWhenActive="page">Log on</a> -->
+                <a [routerLink]="[{ outlets: { log: ['entrance'] } }]" class="button buttonEnter">Log on</a>
+                <div class="button buttonLogIn">Log in</div>
+            </div>
+            <router-outlet name="log"></router-outlet>
+        </div>
+        <div class="pictureShadow"></div>
+    </div>
+</div>
+<!-- | date:'hh:mm:ss'  -->
+<a href=""></a>

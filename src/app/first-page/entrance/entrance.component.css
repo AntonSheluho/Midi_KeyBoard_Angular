@@ -1,0 +1,160 @@
+.root3 {
+    display: block;
+    position: fixed;
+    top: calc((100vh - 50vh) - 145px);
+    left: calc((100vw - 50vw) - 189px);
+    z-index: 11;
+}
+
+.entranceWrapper {
+    width: 376px;
+    height: 288px;
+}
+
+.entranceForm {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    width: 100%;
+}
+
+.eye3 {
+    top: 111px;
+    left: 290px;
+}
+
+.backEntranceMark {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.entranceButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 60%;
+    height: 45px;
+    font-weight: bold;
+    color: #585858;
+    cursor: pointer;
+    background-color: #ff9800;
+    box-shadow: 0px 10px 13px #795548bf;
+    transition-duration: .1s;
+}
+
+.butt:hover {
+    box-shadow: 4px 14px 17px #795548bf;
+}
+
+.butt:active {
+    box-shadow: 4px 8px 11px #795548bf;
+}
+
+.errorEntranceText {
+    color: rgb(207, 207, 207);
+}
+
+.errorActive {
+    color: red;
+    cursor: context-menu;
+}
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 1300px) {
+    .root3 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 0px;
+        width: 100vw;
+        
+    }
+
+    .entranceWrapper {
+        width: 300px;
+        height: 250px;
+        align-self: center;
+    }
+
+    .eye3 {
+        top: 92px;
+        left: 224px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 480px) and (max-width: 900px) {
+    .root3 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 30%;
+        left: 0px;
+        width: 100vw;
+    }
+
+    .entranceWrapper {
+        width: 300px;
+        align-self: center;
+    }
+
+    .eye3 {
+        left: 224px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-width: 900px) {
+    .root3 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 0px;
+        width: 100vw;
+        
+    }
+
+    .entranceWrapper {
+        width: 300px;
+        height: 250px;
+        align-self: center;
+    }
+
+    .eye3 {
+        top: 92px;
+        left: 224px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 475px) {
+    .root3 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 30%;
+        left: 0px;
+        width: 100vw;
+    }
+
+    .entranceWrapper {
+        width: 300px;
+        align-self: center;
+    }
+
+    .eye3 {
+        left: 224px;
+    }
+}

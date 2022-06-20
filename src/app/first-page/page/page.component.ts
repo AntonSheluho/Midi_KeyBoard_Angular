@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
+  public clock: Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
+    this.clockUpdata()
+  }
+
+  clockUpdata() {
+    setInterval(()=> this.clock = new Date())
   }
 
 }
